@@ -3,210 +3,162 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080808">
+<meta name="theme-color" content="#030b20">
 <title>Adarsh Ki Vaani ™️</title>
 
 <!-- META PIXEL -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+if (!window.__adarshPixelBooted) {
+  window.__adarshPixelBooted = true;
 
-fbq('init','1061808970217704');
-fbq('track','PageView');
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1432226715738304');
+  fbq('track', 'PageView');
+}
 </script>
 
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1061808970217704&ev=PageView&noscript=1"/>
-</noscript>
-
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-padding:20px;
-background:
-radial-gradient(ellipse at top,#352512 0%,transparent 45%),
-#080808;
-font-family:Arial,sans-serif;
-color:#fff;
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background:
+    radial-gradient(ellipse at 50% 35%, #102e67 0%, transparent 55%),
+    linear-gradient(145deg, #020714, #07172f 55%, #020817);
 }
 
-.card{
-width:100%;
-max-width:390px;
-padding:48px 25px 35px;
-text-align:center;
-border-radius:25px;
-background:linear-gradient(145deg,
-rgba(255,255,255,.09),
-rgba(255,255,255,.02));
-border:1px solid rgba(226,184,93,.5);
-box-shadow:
-0 0 25px rgba(221,169,66,.18),
-inset 0 0 25px rgba(255,255,255,.025);
-backdrop-filter:blur(20px);
-position:relative;
-overflow:hidden;
+.card {
+  width: 100%;
+  max-width: 390px;
+  text-align: center;
+  padding: 38px 24px 30px;
+  border: 2px solid #238cff;
+  border-radius: 25px;
+  background: linear-gradient(
+    145deg,
+    rgba(30, 100, 190, .19),
+    rgba(5, 17, 43, .88)
+  );
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow:
+    0 0 12px rgba(0, 130, 255, .45),
+    0 0 35px rgba(0, 110, 255, .23),
+    inset 0 0 20px rgba(65, 155, 255, .10);
 }
 
-.card:before{
-content:"";
-position:absolute;
-top:0;
-left:15%;
-width:70%;
-height:1px;
-background:linear-gradient(
-90deg,transparent,#ffe3a0,transparent);
-box-shadow:0 0 15px #e6bd70;
+.logo {
+  width: 94px;
+  height: 94px;
+  margin: 0 auto 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 3px solid #54b5ff;
+  background: linear-gradient(145deg, #174e9b, #03142e);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  box-shadow:
+    0 0 12px #168bff,
+    0 0 30px rgba(0, 125, 255, .65),
+    inset 0 0 15px rgba(255,255,255,.12);
 }
 
-h1{
-font-size:29px;
-font-weight:900;
-letter-spacing:1px;
-line-height:1.4;
-background:linear-gradient(
-90deg,#fff1c9,#d5a64e,#fff0bd);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-margin-bottom:12px;
+h1 {
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: .3px;
+  text-shadow: 0 0 14px rgba(60, 160, 255, .65);
+  margin-bottom: 11px;
 }
 
-.tagline{
-font-size:12px;
-color:#c5bba7;
-letter-spacing:2px;
-margin-bottom:30px;
+.subtitle {
+  font-size: 13px;
+  color: #b9d9ff;
+  line-height: 1.6;
+  margin-bottom: 28px;
 }
 
-.line{
-width:70px;
-height:2px;
-margin:0 auto 27px;
-background:linear-gradient(
-90deg,transparent,#e4bd75,transparent);
+.join-btn {
+  width: 100%;
+  display: block;
+  padding: 16px 12px;
+  border-radius: 13px;
+  border: 2px solid #82caff;
+  background: linear-gradient(100deg, #0878ed, #1644b7);
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: .7px;
+  box-shadow:
+    0 0 12px rgba(0, 140, 255, .65),
+    0 0 25px rgba(0, 100, 255, .35);
+  transition: .2s ease;
+  cursor: pointer;
 }
 
-.description{
-font-size:14px;
-line-height:1.9;
-color:#ded8cc;
-margin-bottom:32px;
+.join-btn:active {
+  transform: scale(.97);
 }
 
-.join-btn{
-width:100%;
-min-height:59px;
-display:flex;
-align-items:center;
-justify-content:center;
-gap:10px;
-border:1px solid #ffe3a0;
-border-radius:14px;
-background:linear-gradient(
-110deg,#a97829,#f0ce81,#b17d2e);
-color:#160f05;
-font-size:15px;
-font-weight:900;
-letter-spacing:1px;
-text-decoration:none;
-box-shadow:
-0 0 15px rgba(230,181,85,.45),
-0 0 35px rgba(230,181,85,.18);
-transition:.3s;
-}
-
-.join-btn:hover{
-box-shadow:0 0 30px rgba(255,204,112,.7);
-}
-
-.join-btn:active{
-transform:scale(.97);
-}
-
-.verified{
-margin-top:25px;
-font-size:11px;
-color:#d8bd83;
-letter-spacing:1.5px;
-}
-
-.footer{
-margin-top:25px;
-font-size:10px;
-color:#898174;
-letter-spacing:1px;
+.footer {
+  margin-top: 25px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #83bfff;
+  opacity: .8;
 }
 </style>
 </head>
 
 <body>
 
-<div class="card">
+<main class="card">
 
-<h1>ADARSH KI VAANI ™️</h1>
+  <div class="logo">AV</div>
 
-<div class="tagline">
-OFFICIAL TELEGRAM CHANNEL
-</div>
+  <h1>Adarsh Ki Vaani ™️</h1>
 
-<div class="line"></div>
+  <p class="subtitle">
+    Welcome to our official Telegram channel.<br>
+    Join us and stay connected.
+  </p>
 
-<p class="description">
-Welcome to Adarsh Ki Vaani.<br>
-Join our official Telegram channel<br>
-and stay connected with us.
-</p>
+  <a
+    href="https://t.me/+i0CF4kU9VpRhOWQ1"
+    class="join-btn"
+    id="joinTelegram"
+  >
+    ✦ JOIN TELEGRAM CHANNEL
+  </a>
 
-<a href="https://t.me/+i0CF4kU9VpRhOWQ1"
-class="join-btn" id="joinButton">
-➤ JOIN CHANNEL NOW
-</a>
+  <div class="footer">
+    OFFICIAL TELEGRAM COMMUNITY
+  </div>
 
-<div class="verified">
-✦ OFFICIAL COMMUNITY ✦
-</div>
-
-<div class="footer">
-© 2026 ADARSH KI VAANI
-</div>
-
-</div>
-
-<script>
-document.getElementById('joinButton')
-.addEventListener('click',function(e){
-
-e.preventDefault();
-
-const telegramLink=this.href;
-
-if(typeof fbq==='function'){
-fbq('track','Subscribe');
-}
-
-setTimeout(function(){
-window.location.href=telegramLink;
-},500);
-
-});
-</script>
+</main>
 
 </body>
 </html>
